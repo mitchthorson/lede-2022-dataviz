@@ -7,9 +7,20 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
-	<p>Hello world!</p>
-	<script src="./main.js"></script>
+	<p>When were you born?</p>
+	<select id ="year"> <option disabled selected>Select a year</option>
+	</select>
 
+	<button type="button" id="result">Tell me!</button>
+
+	<div class="movie-sentence hide">
+		<p>The year you were born, <span class="movie"></span> won the Oscar for the best picture.</p>
+	</div>
+
+	<div class="nominee-sentence hide">
+		<p>The other nominees were</p> 
+		<div class="nominee-list"></div>
+	</div>
+	<script src="./main.js"></script>
 </body>
 </html>
