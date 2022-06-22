@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Web viz demo page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<p>When were you born?</p>
+
+	<select id ="year">
+		<option disabled selected>Select a year</option>
+	</select>
+
+	<button type="button" id="result">Tell me!</button>
+
+	<div class="movie-sentence hide">
+		The year you were born, <span class="movie"></span> won the Oscar for the best picture.
+	</div>
+
+	<div class="nominee-sentence hide">
+		The other nominees were 
+		<div class="nominee-list">
+		</div>
+
+	</div>  
+	<script src="./main.js"></script>
+</body>
+</html>
