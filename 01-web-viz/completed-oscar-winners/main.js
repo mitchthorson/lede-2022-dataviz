@@ -1,5 +1,5 @@
 // load the data from CSV
-d3.csv("https://gist.githubusercontent.com/mitchthorson/59443afda6aa6e11dd5d26d7041c0113/raw/0e65fa1d991c2c57a1b4c6bf8ac6470e55d18653/oscars.csv")
+d3.csv("./oscars.csv")
 	.then((data) => {
 
 	// get a list of years
