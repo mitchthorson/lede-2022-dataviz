@@ -3,7 +3,7 @@ d3.csv("./oscars.csv")
 	.then((data) => {
 
 	// get a list of years
-	const options = data.filter((movie) => movie["Winner"] == 1).map((movie) => movie.Year)
+	const options = data.filter((movie) => movie.winner == 1).map((movie) => movie.year)
 
 	// d3 selects our element with year id
 	d3.select("#year")
@@ -34,15 +34,15 @@ d3.csv("./oscars.csv")
 	const year = d3.select("#year").node().value
 
 	// Filter the data for year and winner 
-	const filtered = data.filter((d) => d.Year == year && d.Winner == 1)
+	const filtered = data.filter((d) => d.year == year && d.winner == 1)
 
 	// Select the element with the class movie
 	d3.select(".movie")
 		//And set the text as the name of the first element
-		.text(filtered[0].Name)
+		.text(filtered[0].name)
     
 	// How do I get the nominees!!!!????
-	const nominees = data.filter((d) => d.Year == year && d.Winner == "")
+	const nominees = data.filter((d) => d.year == year && d.winner == "")
     
 	d3.select(".nominee-list")
 		.selectAll("p.nominee")
@@ -51,6 +51,6 @@ d3.csv("./oscars.csv")
 		// .append('p')
 		.join("p")
 		.attr("class","nominee")
-		.text(nomineeMovie => nomineeMovie.Name)
+		.text(nomineeMovie => nomineeMovie.name)
 	})
 }) 
