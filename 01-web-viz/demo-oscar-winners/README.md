@@ -10,7 +10,7 @@ In order to run this locally on your computer you will need to have several thin
 - [VSCode](https://code.visualstudio.com/) (or another editor + terminal)
 - A web browser
 
-You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [here](https://github.com/mitchthorson/lede-2022-dataviz/releases/download/v1.0.0/demo-oscar-winners.zip).
+You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [here](https://github.com/mitchthorson/lede-2022-dataviz/releases/download/v1.1/demo-oscar-winners.zip).
 
 If you don't have everything installed on your computer, you can use the website [CodePen](https://codepen.io) to code along. Sign up for an account if you don't have one and clone [this pen](https://codepen.io/mitchthorson/pen/jOZJppb?editors=1111).
 
@@ -25,7 +25,8 @@ npm install
 If this doesn't work, it may be because your NodeJS installation is not working properly. Ask for some help, or try using the CodePen above.
 
 If the `npm install` command did work for you, then go ahead and run
-```
+
+```console
 npm start
 ```
 
