@@ -12,7 +12,7 @@ In order to run this locally on your computer you will need to have several thin
 
 You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [TK]().
 
-If you don't have everything installed on your computer, you can use the website [CodePen](https://codepen.io) to code along. Sign up for an account if you don't have one and clone [this pen](https://codepen.io/mitchthorson/pen/XWErwxz).
+If you don't have everything installed on your computer, you can use the website [CodePen](https://codepen.io) to code along. Sign up for an account if you don't have one and fork [this pen](https://codepen.io/mitchthorson/pen/XWErwxz).
 
 Once you have this folder on your computer, open it in VSCode.
 
