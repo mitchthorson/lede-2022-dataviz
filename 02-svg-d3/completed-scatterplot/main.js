@@ -20,9 +20,6 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		europe: "gold",
 	};
 
-	// this function will format any number we pass to it. If we call format(40000) we will get 40k.
-	// 42200 will give us 42.2k and so on.
-	const format = d3.format(".2s");
 
 	// setting up some scales scales to translate the raw values in the dataset into somoething more useful for charting
 	// the y scale is based on life expectancy
@@ -68,10 +65,12 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		.attr("width", width); // and set the width of the SVG
 
 	// now we can add the circles to the svg, one for each row in the dataset
-	// first we "select" the circles that don't yet exist
 	svg
+		// create an area inside the svg that respects the margins
 		.append("g")
-		.attr("transform", "translate(" + margin + ", " + margin + ")") // create an area inside the svg that respects the margins
+		// adjust for margins
+		.attr("transform", "translate(" + margin + ", " + margin + ")")
+		// first we "select" the circles that don't yet exist
 		.selectAll("circle")
 		// then, we bind the data to the circles selection
 		.data(countries)
@@ -85,29 +84,34 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		.attr("cx", (d) => xScale(+d.income_per_person_gdppercapita_ppp_inflation_adjusted))
 		// give this whole thing a radius pls
 		.attr("r", (d) => radiusScale(+d.population_total))
-
 		// next we can add a fill by looking up the region of each row in the color object we defined above
 		.attr("fill", (d) => myPrettyColors[d.region])
-
 		// this will give a stroke to our circle
 		.attr("stroke", "black")
-
 		// this sets the opacity of the circle
 		.attr("fill-opacity", 0.5);
 
-	// now let's add some axes to the chart so it is easier to understand what we are charting
+	// this function will format any number we pass to it. If we call format(40000) we will get 40k.
+	// 42200 will give us 42.2k and so on.
+	const numberFormat = d3.format(".2s");
+
+	// here we can create an axis based on the xScale 
+	// axisBottom means that the numbers go on the bottom of the axis.
+	// the .ticks() function takes 2 arguments, 
+	// the first is the number of ticks we want to show on our chart
+	// the sexond paremeter is a function that formats the ticks how we want
+	const xAxis = d3.axisBottom(xScale) 
+		.ticks(9, numberFormat)
+
+	// now let's add some axes to the chart so it is easier for any readers to understand what we are charting
 	// append a "g" element, which is just a generic group
 	svg
 		.append("g")
 		.attr("class", "axis-x") // give the g element a class that identifies its purpose
-		.attr("transform", "translate(" + margin + "," + (height - margin) + ")") // sets the position of our <g> by using the margin
-		.call(
-			d3
-				.axisBottom(xScale) // here we create an axis based on the xScale, axisBottom means that the numbers go on the bottom of the axis.
-				.ticks(9, (d) => format(d))
-		); // tickFormat transforms the values on the scale to an easier to read format.
+		.attr("transform", "translate(" + margin + "," + (height - margin) + ")") // sets the position of our <g> by using the margin constant we defined
+		.call(xAxis); // call the axis function with the current selection
 
-	// now the smae thing for the y axis
+	// now the same thing for the y axis
 	svg
 		.append("g")
 		.attr("class", "axis-y")
