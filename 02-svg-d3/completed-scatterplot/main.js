@@ -3,6 +3,7 @@
 
 // read in the data for 2019
 d3.csv("./GapminderData.csv").then(function (countries) {
+
 	// now that we have the data, we can start setting up the chart
 	// height and width will control the size of the chart
 	const height = 400;
@@ -12,8 +13,8 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 	const margin = 30;
 
 	// colors for each continent represented in the dataset
-	// these color values be accessed by looking them up like myPrettyColors["africa"]
-	const myPrettyColors = {
+	// these color values be accessed by looking them up like regionColors["africa"]
+	const regionColors = {
 		africa: "deepskyblue",
 		asia: "tomato",
 		americas: "limegreen",
@@ -37,6 +38,7 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 	// (area / π) = r^2
 	// square root(area/π) = r
 	// since we want to encode the population as the area of the circle, not the radius, we need to use a square root scale
+	// Read more here: https://eagereyes.org/blog/2008/linear-vs-quadratic-change
 	const radiusScale = d3
 		.scaleSqrt()
 		.domain([minPop, maxPop]) // Input values, the minumum and maximum population values we identified above
@@ -66,30 +68,19 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 
 	// now we can add the circles to the svg, one for each row in the dataset
 	svg
-		// create an area inside the svg that respects the margins
-		.append("g")
-		// adjust for margins
-		.attr("transform", "translate(" + margin + ", " + margin + ")")
-		// first we "select" the circles that don't yet exist
-		.selectAll("circle")
-		// then, we bind the data to the circles selection
-		.data(countries)
-		// now we use the "enter" selection to select any missing circles, which right now is ALL of the circles
-		.enter()
-		// let's FINALLY add the circle element
-		.append("circle")
-		// our cy point is yScale of our life_expectancy_years. yScale(+d.life_expectancy_years) transforms the number in the data to one that fits into our output range
-		.attr("cy", (d) => yScale(+d.life_expectancy_years))
-		// we do the same thing to the cx value with the xScale and income
-		.attr("cx", (d) => xScale(+d.income_per_person_gdppercapita_ppp_inflation_adjusted))
-		// give this whole thing a radius pls
-		.attr("r", (d) => radiusScale(+d.population_total))
-		// next we can add a fill by looking up the region of each row in the color object we defined above
-		.attr("fill", (d) => myPrettyColors[d.region])
-		// this will give a stroke to our circle
-		.attr("stroke", "black")
-		// this sets the opacity of the circle
-		.attr("fill-opacity", 0.5);
+		.append("g") // create an area inside the svg that respects the margins
+		.attr("transform", "translate(" + margin + ", " + margin + ")") // adjust for margins
+		.selectAll("circle") // first we "select" the circles that don't yet exist
+		.data(countries) // then, we bind the data to the circles selection
+		.enter() // now we use the "enter" selection to select any missing circles, which right now is ALL of the circles
+		.append("circle") // let's FINALLY add the circle element
+		
+		.attr("cy", (d) => yScale(+d.life_expectancy_years)) // Set the cy of the circle  to yScale of our life_expectancy_years. yScale(+d.life_expectancy_years) transforms the number in the data to one that fits into our output range
+		.attr("cx", (d) => xScale(+d.income_per_person_gdppercapita_ppp_inflation_adjusted)) // we do the same thing to the cx value with the xScale and income
+		.attr("r", (d) => radiusScale(+d.population_total)) // give the circle a radius using our radius scale
+		.attr("fill", (d) => regionColors[d.region]) // next we can add a fill by looking up the region of each row in the color object we defined above
+		.attr("stroke", "black") // this will give a stroke to our circle
+		.attr("fill-opacity", 0.75); // this sets the opacity of the circle
 
 	// this function will format any number we pass to it. If we call format(40000) we will get 40k.
 	// 42200 will give us 42.2k and so on.
