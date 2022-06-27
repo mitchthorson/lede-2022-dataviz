@@ -1,0 +1,185 @@
+abbreviation,year,income_per_person_gdppercapita_ppp_inflation_adjusted,life_expectancy_years,population_total,region,country_name
+afg,2019,1763,64.08,38041757,asia,Afghanistan
+ago,2019,5544,65,31825299,africa,Angola
+alb,2019,12694,78.47,2880913,europe,Albania
+are,2019,65650,73.63,9770526,asia,United Arab Emirates
+arg,2019,17529,76.96,44780675,americas,Argentina
+arm,2019,9728,75.9,2957728,europe,Armenia
+atg,2019,24463,77.28,97115,americas,Antigua and Barbuda
+aus,2019,45495,82.7,25203200,asia,Australia
+aut,2019,46873,81.98,8955108,europe,Austria
+aze,2019,16248,71.07,10047719,europe,Azerbaijan
+bdi,2019,644,62.25,11530577,africa,Burundi
+bel,2019,43517,81.7,11539326,europe,Belgium
+ben,2019,2230,65.26,11801151,africa,Benin
+bfa,2019,1808,62.5,20321383,africa,Burkina Faso
+bgd,2019,4139,73.66,163046173,asia,Bangladesh
+bgr,2019,20150,75.11,7000117,europe,Bulgaria
+bhr,2019,41966,79.76,1641164,asia,Bahrain
+bhs,2019,28774,74.1,389486,americas,Bahamas
+bih,2019,13120,77,3300998,europe,Bosnia and Herzegovina
+blr,2019,18046,74.47,9452409,europe,Belarus
+blz,2019,7818,74.42,390351,americas,Belize
+bol,2019,7152,73.34,11513102,americas,Bolivia
+bra,2019,14307,75.93,211049519,americas,Brazil
+brb,2019,16640,77.33,287021,americas,Barbados
+brn,2019,72376,75.63,433296,asia,Brunei
+btn,2019,9708,74.73,763094,asia,Bhutan
+bwa,2019,16781,69.85,2303703,africa,Botswana
+caf,2019,794,52.91,4745179,africa,Central African Republic
+can,2019,44181,82.18,37411038,americas,Canada
+che,2019,59044,84.27,8591361,europe,Switzerland
+chl,2019,23012,79.97,18952035,americas,Chile
+chn,2019,17122,77.51,1433783692,asia,China
+civ,2019,3911,63.32,25716554,africa,Cote d'Ivoire
+cmr,2019,3401,63.82,25876387,africa,Cameroon
+cod,2019,838,63.05,86790568,africa,"Congo, Dem. Rep."
+cog,2019,5096,63.25,5380504,africa,"Congo, Rep."
+col,2019,13630,80.49,50339443,americas,Colombia
+com,2019,2478,69.07,850891,africa,Comoros
+cpv,2019,6911,76.2,549936,africa,Cape Verde
+cri,2019,15824,79.84,5047561,americas,Costa Rica
+cub,2019,8126,78.55,11333484,americas,Cuba
+cyp,2019,34544,82.03,1198574,europe,Cyprus
+cze,2019,34143,79.48,10689213,europe,Czech Republic
+deu,2019,46173,80.92,83517046,europe,Germany
+dji,2019,3598,68.6,973557,africa,Djibouti
+dnk,2019,48274,80.98,5771877,europe,Denmark
+dom,2019,16446,73.48,10738957,americas,Dominican Republic
+dza,2019,13967,78.12,43053054,africa,Algeria
+ecu,2019,10215,77.16,17373657,americas,Ecuador
+egy,2019,11360,70.97,100388076,africa,Egypt
+eri,2019,1391,63.42,3497117,africa,Eritrea
+esp,2019,35659,83.33,46736782,europe,Spain
+est,2019,31960,78.48,1325649,europe,Estonia
+eth,2019,1897,69.14,112078727,africa,Ethiopia
+fin,2019,42383,81.77,5532159,europe,Finland
+fji,2019,9990,68.27,889955,asia,Fiji
+fra,2019,39989,83.07,65129731,europe,France
+fsm,2019,3239,67.47,113811,asia,"Micronesia, Fed. Sts."
+gab,2019,16173,69.05,2172578,africa,Gabon
+gbr,2019,40392,81.12,67530161,europe,United Kingdom
+geo,2019,10671,73.18,3996762,europe,Georgia
+gha,2019,4434,66.13,30417858,africa,Ghana
+gin,2019,2415,61.62,12771246,africa,Guinea
+gmb,2019,1568,66.42,2347696,africa,Gambia
+gnb,2019,1634,60.66,1920917,africa,Guinea-Bissau
+gnq,2019,19220,66.28,1355982,africa,Equatorial Guinea
+grc,2019,25703,81.32,10473452,europe,Greece
+grd,2019,14345,74.12,112002,americas,Grenada
+gtm,2019,7606,73.11,17581476,americas,Guatemala
+guy,2019,7931,69.49,782775,americas,Guyana
+hnd,2019,4633,74.35,9746115,americas,Honduras
+hrv,2019,24525,78.83,4130299,europe,Croatia
+hti,2019,1639,65.67,11263079,americas,Haiti
+hun,2019,29603,77.19,9684680,europe,Hungary
+idn,2019,12061,71.91,270625567,asia,Indonesia
+ind,2019,7227,69.46,1366417756,asia,India
+irl,2019,72413,82.28,4882498,europe,Ireland
+irn,2019,16089,77.76,82913893,asia,Iran
+irq,2019,15687,77.07,39309789,asia,Iraq
+isl,2019,47861,83.01,339037,europe,Iceland
+isr,2019,34052,83.28,8519373,asia,Israel
+ita,2019,35816,83.49,60550092,europe,Italy
+jam,2019,8308,74.87,2948277,americas,Jamaica
+jor,2019,8352,79.58,10101697,asia,Jordan
+jpn,2019,39739,84.53,126860299,asia,Japan
+kaz,2019,25350,72.84,18551428,asia,Kazakhstan
+ken,2019,3161,66.65,52573967,africa,Kenya
+kgz,2019,3503,72.98,6415851,asia,Kyrgyz Republic
+khm,2019,4079,70.42,16486542,asia,Cambodia
+kir,2019,2047,62.89,117608,asia,Kiribati
+kor,2019,37343,83,51225321,asia,South Korea
+kwt,2019,64111,83.32,4207077,asia,Kuwait
+lao,2019,6940,68.23,7169456,asia,Lao
+lbn,2019,11683,78.06,6855709,asia,Lebanon
+lbr,2019,1137,65.23,4937374,africa,Liberia
+lby,2019,14751,73.35,6777453,africa,Libya
+lca,2019,12452,75.83,182795,americas,St. Lucia
+lka,2019,12143,77.8,21323734,asia,Sri Lanka
+lso,2019,2924,56.09,2125267,africa,Lesotho
+ltu,2019,32377,75.44,2759631,europe,Lithuania
+lux,2019,94325,81.96,615730,europe,Luxembourg
+lva,2019,27269,75.41,1906740,europe,Latvia
+mar,2019,7772,74.42,36471766,africa,Morocco
+mda,2019,6722,73.08,4043258,europe,Moldova
+mdg,2019,1487,64.21,26969306,africa,Madagascar
+mdv,2019,14252,82.07,530957,asia,Maldives
+mex,2019,18002,75.63,127575529,americas,Mexico
+mkd,2019,13898,76.76,2083458,europe,North Macedonia
+mli,2019,2097,62.86,19658023,africa,Mali
+mlt,2019,39339,81.3,440377,europe,Malta
+mmr,2019,6267,69.1,54045422,asia,Myanmar
+mne,2019,17783,76.71,627988,europe,Montenegro
+mng,2019,12760,69.3,3225166,asia,Mongolia
+moz,2019,1170,59.86,30366043,africa,Mozambique
+mrt,2019,3885,71.03,4525698,africa,Mauritania
+mus,2019,21830,75.02,1269670,africa,Mauritius
+mwi,2019,1182,64.2,18628749,africa,Malawi
+mys,2019,29071,75.05,31949789,asia,Malaysia
+nam,2019,9696,67.22,2494524,africa,Namibia
+ner,2019,954,63.2,23310719,africa,Niger
+nga,2019,5300,65.23,200963603,africa,Nigeria
+nic,2019,4615,79.24,6545503,americas,Nicaragua
+nld,2019,50536,81.79,17097123,europe,Netherlands
+nor,2019,66308,82.59,5378859,europe,Norway
+npl,2019,2878,71.53,28608715,asia,Nepal
+nzl,2019,36472,81.92,4783062,asia,New Zealand
+omn,2019,35758,77.57,4974992,asia,Oman
+pak,2019,4997,67.18,216565317,asia,Pakistan
+pan,2019,23315,79.65,4246440,americas,Panama
+per,2019,12992,80.79,32510462,americas,Peru
+phl,2019,8264,70,108116622,asia,Philippines
+png,2019,3931,58.94,8776119,asia,Papua New Guinea
+pol,2019,29912,78.38,37887771,europe,Poland
+prk,2019,1715,72.36,25666158,asia,North Korea
+prt,2019,29275,81.84,10226178,europe,Portugal
+pry,2019,12015,76.38,7044639,americas,Paraguay
+pse,2019,4671,77.17,4981422,asia,Palestine
+qat,2019,113331,80.45,2832071,asia,Qatar
+rou,2019,25527,75.44,19364558,europe,Romania
+rus,2019,25654,72.52,145872260,europe,Russia
+rwa,2019,2110,69.14,12626938,africa,Rwanda
+sau,2019,48115,77.12,34268529,asia,Saudi Arabia
+sdn,2019,4506,70.77,42813237,africa,Sudan
+sen,2019,3461,68.62,16296362,africa,Senegal
+sgp,2019,90080,85.14,5804343,asia,Singapore
+slb,2019,2152,68.86,669821,asia,Solomon Islands
+sle,2019,1464,61.32,7813207,africa,Sierra Leone
+slv,2019,7509,74.46,6453550,americas,El Salvador
+som,2019,631,59.23,15442906,africa,Somalia
+srb,2019,16663,76.03,8772228,europe,Serbia
+ssd,2019,1855,59.74,11062114,africa,South Sudan
+stp,2019,3047,67.3,215048,africa,Sao Tome and Principe
+sur,2019,13912,72.27,581363,americas,Suriname
+svk,2019,32095,77.73,5457012,europe,Slovak Republic
+svn,2019,33676,81.41,2078654,europe,Slovenia
+swe,2019,47211,82.78,10036391,europe,Sweden
+swz,2019,9560,61.82,1148133,africa,Eswatini
+syc,2019,27788,73.75,97741,africa,Seychelles
+syr,2019,2900,71.49,17070132,asia,Syria
+tcd,2019,1743,60.62,15946882,africa,Chad
+tgo,2019,1605,64.96,8082359,africa,Togo
+tha,2019,17359,78.58,69625581,asia,Thailand
+tjk,2019,3150,70.77,9321023,asia,Tajikistan
+tkm,2019,17599,70.35,5942094,asia,Turkmenistan
+tls,2019,7054,71.31,1293120,asia,Timor-Leste
+ton,2019,5904,71.98,104497,asia,Tonga
+tto,2019,28522,74.51,1394969,americas,Trinidad and Tobago
+tun,2019,11146,78.73,11694721,africa,Tunisia
+tur,2019,25039,79.48,83429607,europe,Turkey
+tza,2019,2978,67.73,58005461,africa,Tanzania
+uga,2019,1870,66.6,44269587,africa,Uganda
+ukr,2019,8480,70.77,43993643,europe,Ukraine
+ury,2019,20925,77.32,3461731,americas,Uruguay
+usa,2019,56657,78.6,329064917,americas,United States
+uzb,2019,6493,70.69,32981715,asia,Uzbekistan
+vct,2019,11183,72.53,110593,americas,St. Vincent and the Grenadines
+ven,2019,9724,75.1,28515829,americas,Venezuela
+vnm,2019,6970,74.69,96462108,asia,Vietnam
+vut,2019,2888,65,299882,asia,Vanuatu
+wsm,2019,6239,73.15,197093,asia,Samoa
+yem,2019,2343,68.1,29161922,asia,Yemen
+zaf,2019,12039,66.93,58558267,africa,South Africa
+zmb,2019,3700,64.04,17861034,africa,Zambia
+zwe,2019,2392,62.04,14645473],africa,Zimbabwe
