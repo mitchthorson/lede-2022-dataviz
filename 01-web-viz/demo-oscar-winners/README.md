@@ -1,4 +1,4 @@
-# d3 intro demo
+# D3 intro demo
 
 This is a simple project that demonstrates binding data to HTML with [D3.js](https://d3js.org)
 
