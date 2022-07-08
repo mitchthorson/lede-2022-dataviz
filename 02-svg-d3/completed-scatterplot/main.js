@@ -21,7 +21,6 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		europe: "gold",
 	};
 
-
 	// setting up some scales scales to translate the raw values in the dataset into somoething more useful for charting
 	// the y scale is based on life expectancy
 	const yScale = d3
@@ -45,13 +44,13 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		.range([2, 40]); // Output values: what we will apply as values to our svg elements
 
 	// now we need to get the min and max of the income column in our dataset
-	const maxIncome = d3.max(countries, (d) => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
-	const minIncome = d3.min(countries, (d) => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
+	const maxIncome = d3.max(countries, d => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
+	const minIncome = d3.min(countries, d => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
 
 	// d3 has another function that allows us to get the min AND the max at the same time
 	// this function is called "extent", and it returns the min max as an array that looks like:
 	// [min, max]
-	const minMax = d3.extent(countries, (d) => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
+	const minMax = d3.extent(countries, d => +d.income_per_person_gdppercapita_ppp_inflation_adjusted);
 
 	// the xScale takes the income values in our dataset
 	const xScale = d3
@@ -74,11 +73,10 @@ d3.csv("./GapminderData.csv").then(function (countries) {
 		.data(countries) // then, we bind the data to the circles selection
 		.enter() // now we use the "enter" selection to select any missing circles, which right now is ALL of the circles
 		.append("circle") // let's FINALLY add the circle element
-		
-		.attr("cy", (d) => yScale(+d.life_expectancy_years)) // Set the cy of the circle  to yScale of our life_expectancy_years. yScale(+d.life_expectancy_years) transforms the number in the data to one that fits into our output range
-		.attr("cx", (d) => xScale(+d.income_per_person_gdppercapita_ppp_inflation_adjusted)) // we do the same thing to the cx value with the xScale and income
-		.attr("r", (d) => radiusScale(+d.population_total)) // give the circle a radius using our radius scale
-		.attr("fill", (d) => regionColors[d.region]) // next we can add a fill by looking up the region of each row in the color object we defined above
+		.attr("cy", d => yScale(+d.life_expectancy_years)) // Set the cy of the circle  to yScale of our life_expectancy_years. yScale(+d.life_expectancy_years) transforms the number in the data to one that fits into our output range
+		.attr("cx", d => xScale(+d.income_per_person_gdppercapita_ppp_inflation_adjusted)) // we do the same thing to the cx value with the xScale and income
+		.attr("r", d => radiusScale(+d.population_total)) // give the circle a radius using our radius scale
+		.attr("fill", d => regionColors[d.region]) // next we can add a fill by looking up the region of each row in the color object we defined above
 		.attr("stroke", "black") // this will give a stroke to our circle
 		.attr("fill-opacity", 0.75); // this sets the opacity of the circle
 
