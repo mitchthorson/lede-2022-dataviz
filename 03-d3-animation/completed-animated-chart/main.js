@@ -88,17 +88,6 @@ d3.csv("countries.csv").then(data => {
 		.attr('r', d => rScale(+d.population) ) // use the rScale to set the r attribute of the <circle> based on the population column for each row
 		.attr('fill', d => regionColors[d.region]) // use the regionColors variable we created to lookup the correct color value based on the region column for each row
 		.attr('opacity', .8) // setting the opacity to .8 for ALL circles
-		.attr('stroke', d => {
-			// here we are setting an attribute for just a single circle
-			if (d.country === 'China') return 'red'
-			// and here we are setting the rest
-			else return 'none'
-		})
-		.attr('stroke-width', d => {
-			// similar to the above function, but for the stroke-width
-			if (d.country === 'China') return '2px'
-			else return 0
-		})
 
 	// this function will help us convert the format of the labels to be more human-readable
 	// to do this, we are using the helpful d3.format() function https://github.com/d3/d3-format
