@@ -165,7 +165,7 @@ d3.csv("https://raw.githubusercontent.com/mitchthorson/lede-2022-dataviz/main/03
 		scroller.setup({
 			step: ".step",
 			offset: 0.5,
-			debug: true
+			// debug: true
 		})
 		// the function that fires every time a new step activates
 		.onStepEnter((response) => {

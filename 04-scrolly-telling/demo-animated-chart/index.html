@@ -2,13 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>D3 Animation demo</title>
+	<title>D3 scrollytelling demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<h1>Gapminder Chart</h1>
-	<div id="chart"></div>
-	<script src="https://d3js.org/d3.v7.min.js"></script>
-	<script src="./main.js"></script>
+	<main>
+		<div id="chart"></div>
+		<div class="steps">
+			<div class="step">
+				<!-- leave the first step empty for spacing -->
+			</div>
+			<div class="step">
+				<p>First we have an x axis for GDP per capita.</p>
+			</div>
+			<div class="step">
+				<p>Next we add a y axis for life expectancy.</p>
+			</div>
+			<div class="step">
+				<p>We'll add a circle for every country, with the color for each region and the size for population.</p> 
+				<p>Africa is green, Asia is gold, the Americas are red, and Europe is blue.</p>
+			</div>
+			<div class="step">
+				<p>This data is for the year 1799.</p>
+			</div>
+			<div class="step">
+				<p>Let's play the animation through to the end.</p>
+			</div>
+			<div class="step">
+				<!-- leave the first step empty for spacing -->
+			</div>
+		</div>
+		<script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js"></script>
+		<script src="https://unpkg.com/d3@7.6.1/dist/d3.min.js"></script>
+		<script src="./main.js"></script>
+	</main>
 </body>
 </html>
