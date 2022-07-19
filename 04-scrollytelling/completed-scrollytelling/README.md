@@ -10,7 +10,7 @@ In order to run this locally on your computer you will need to have several thin
 - [VSCode](https://code.visualstudio.com/) (or another editor + terminal)
 - A web browser
 
-You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [here](https://github.com/mitchthorson/lede-2022-dataviz/releases/download/v1.1/demo-scrollytelling.zip).
+You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [here](https://github.com/mitchthorson/lede-2022-dataviz/releases/download/v1.1/completed-scrollytelling.zip).
 
 Once you have this folder on your computer, open it in VSCode.
 
