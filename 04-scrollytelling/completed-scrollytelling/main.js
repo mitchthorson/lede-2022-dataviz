@@ -208,6 +208,10 @@ d3.csv("https://raw.githubusercontent.com/mitchthorson/lede-2022-dataviz/main/03
 				show(".y-axis")
 				show("circle")
 				show("#year", 0.5)
+				// need to make sure we reset any animation that might be playing already
+				if (interval) {
+					clearInterval(interval)
+				}
 				// here is where we create our animation loop.
 				// setInterval will run the function we provide it every x milliseconds
 				// we define the length of the milliseconds in the 2nd argument
