@@ -1,6 +1,6 @@
 # In class Svelte demo
 
-This is an example of a Svelte chart that uses D3 and SVG. To get started, first install the necessary dependencies with:
+This is an example of a Svelte chart that uses D3 and SVG.
 
 ## Getting setup
 
