@@ -28,8 +28,6 @@ And then start the local server with:
 npm start
 ```
 
-You will need to be able to run these commands to use this project, as Svelte is dependent on running a compiler to process all of the code we write here. If you aren't able to run `npm` commands, try Svelte out by [using the online REPL](https://svelte.dev/repl/f3c2d0a1b74142ba9cb542e98aef26fc?version=3.49.0).
-
 ## Notes on the Svelte starter template
 
 This project was started with the `npm create vite@latest my-app -- --template svelte` command. It made all the files and subfolders I needed to get started. I then simplified it a bit and took out what I didn't need.
