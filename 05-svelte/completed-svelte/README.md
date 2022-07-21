@@ -12,6 +12,8 @@ In order to run this locally on your computer you will need to have several thin
 
 You can either clone this repo with git or the github desktop app onto your computer, or you can download this folder [here](https://github.com/mitchthorson/lede-2022-dataviz/releases/download/v1.1/completed-svelte.zip).
 
+You will need to have Node installed and be able to run these commands to use this project, as Svelte is dependent on running a compiler to process all of the code we write here. If aren't able to run this project on your computer for any reason, try [using the online REPL](https://svelte.dev/repl/9c8b39bd83634e0db874db2304d54f1d?version=3.49.0).
+
 Once you have this folder on your computer, open it in VSCode.
 
 Open a `terminal` in VSCode and run the command:
@@ -25,8 +27,6 @@ And then start the local server with:
 ```
 npm start
 ```
-
-You will need to be able to run these commands to use this project, as Svelte is dependent on running a compiler to process all of the code we write here. If you aren't able to run `npm` commands, try Svelte out by [using the online REPL](https://svelte.dev/repl/hello-world).
 
 ## Notes on the Svelte starter template
 
